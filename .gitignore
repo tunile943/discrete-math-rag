@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Textbook source
+data/*.pdf
+
+# Vector DB
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Compiled README
+*.html
