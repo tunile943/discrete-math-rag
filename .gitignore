@@ -1,8 +1,10 @@
 # Secrets
 .env
+.envrc
 
 # Textbook source
 data/*.pdf
+textbook.md
 
 # Vector DB
 chroma_db/
@@ -12,7 +14,12 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+temp/
 
-# Compiled README
+# Compiled markdown and readme
 *.html
 README_files/
+output/
+
+# macOS metadata
+.DS_Store

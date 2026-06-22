@@ -1,5 +1,6 @@
 anthropic
 chromadb
-pymupdf4llm
+marker
+sentence-transformers
 streamlit
 python-dotenv
