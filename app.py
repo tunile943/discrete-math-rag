@@ -1,8 +1,7 @@
 """
 app.py
 
-Streamlit UI shell. This file is mostly working plumbing -- the interesting
-logic lives in rag.py. Run with:
+Streamlit UI shell. This file is mostly working plumbing. Run with:
 
     streamlit run app.py
 """
@@ -18,7 +17,7 @@ st.caption("Practice questions and conceptual Q&A grounded in your textbook.")
 mode = st.radio("What do you want to do?", ["Generate practice questions", "Ask a conceptual question"])
 
 if mode == "Generate practice questions":
-    topic = st.text_input("Topic or section (e.g. 'loop invariants', 'dynamic programming')")
+    topic = st.text_input("Topic or section (e.g. 'induction', 'pigeonhole principle', 'probability space')")
     difficulty = st.select_slider("Difficulty", options=["easy", "medium", "hard"], value="medium")
     n = st.slider("Number of questions", min_value=1, max_value=5, value=3)
 
